@@ -1,0 +1,16 @@
+###########################
+##### GIT IGNORE FILE #####
+###########################
+
+# ignore IDE configs
+.idea/
+
+# ignore SVN plugin files
+Plugins/cloud-search
+Plugins/daily-logo
+Plugins/picker
+Plugins/taxonomy-filter
+
+# ignore file system files
+.DS_Store
+
