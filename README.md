@@ -31,3 +31,19 @@ The default set of symlinks (used in every wp-content folder):
 * ln -s ~/Projects/WordPress/Plugins/taxonomy-filter/trunk taxonomy-filter
 * ln -s ~/Projects/WordPress/Plugins/wordpress-importer wordpress-importer
 * ln -s ~/Projects/WordPress/Plugins/wordpress-setup wordpress-setup
+
+First configurations (after import):
+* conf picker on sidebar
+* conf a daily logo
+* conf taxonomy filter on genre tax
+* conf CloudSearch
+* check same data
+  - plugins (local e network)
+  - users (same names and roles)
+  - tags
+  - custom terms (genre)
+  - custom post types (book)
+  - widgets on sidebar
+  - post (title, text, excerpt, category, tags, custom fields, image and author)
+  - pages
+  - settings
