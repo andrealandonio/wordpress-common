@@ -39,11 +39,11 @@ First configurations (after import):
 * conf CloudSearch
 * check same data
   - plugins (local e network)
-	- users (same names and roles)
-	- tags
-	- custom terms (genre)
-	- custom post types (book)
-	- widgets on sidebar
-	- post (title, text, excerpt, category, tags, custom fields, image and author)
-	- pages
-	- settings
+  - users (same names and roles)
+  - tags
+  - custom terms (genre)
+  - custom post types (book)
+  - widgets on sidebar
+  - post (title, text, excerpt, category, tags, custom fields, image and author)
+  - pages
+  - settings
