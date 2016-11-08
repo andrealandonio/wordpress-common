@@ -80,3 +80,17 @@ function wordpress_setup_test_daily_logo() {
         do_action('daily_logo_show_today');
     }
 }
+
+/**
+ * Disable admin notices
+ */
+function wordpress_setup_disable_admin_notices() {
+    remove_action( 'admin_notices', 'update_nag', 3 );
+}
+add_action( 'admin_menu','wordpress_setup_disable_admin_notices' );
+
+// Disable automatic plugins updates
+//add_filter( 'auto_update_plugin', '__return_false' );
+
+// Disable automatic themes updates
+//add_filter( 'auto_update_theme', '__return_false' );
