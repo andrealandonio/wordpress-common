@@ -14,6 +14,13 @@ if ( ! defined( '__DIR__' ) ) {
 }
 
 /**
+ * Constants
+ */
+define('IMAGE_LANDSCAPE', 'post-thumbnail');
+define('IMAGE_PORTRAIT', 'p-post-thumbnail');
+define('IMAGE_FORMAT_300x200', '300x200');
+
+/**
  * Register book post type
  */
 function wordpress_setup_cpt_book_init() {
@@ -82,10 +89,39 @@ function wordpress_setup_test_daily_logo() {
 }
 
 /**
+ * Theme setup
+ */
+function wordpress_setup_theme_setup() {
+	// Set default timezone
+	date_default_timezone_set( 'Europe/Rome' );
+
+	// Add support for post thumbnails
+	add_theme_support( 'post-thumbnails' );
+
+	// Add custom image sizes
+	add_image_size( IMAGE_FORMAT_300x200, 300, 200, true ); // Custom image size (landscape)
+
+	// Multi post thumbnails setup with custom fields (for types: post and book)
+	if ( class_exists( 'MultiPostThumbnails' ) ) {
+		$types = array( 'post', 'book' );
+		foreach ( $types as $type ) {
+			new MultiPostThumbnails(
+				array(
+					'label' => 'Portrait image',
+					'id' => IMAGE_PORTRAIT,
+					'post_type' => $type
+				)
+			);
+		}
+	}
+}
+add_action( 'after_setup_theme', 'wordpress_setup_theme_setup' );
+
+/**
  * Disable admin notices
  */
 function wordpress_setup_disable_admin_notices() {
-    remove_action( 'admin_notices', 'update_nag', 3 );
+	remove_action( 'admin_notices', 'update_nag', 3 );
 }
 add_action( 'admin_menu','wordpress_setup_disable_admin_notices' );
 
