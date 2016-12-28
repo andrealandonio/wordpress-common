@@ -24,6 +24,7 @@ The default set of symlinks (used in every wp-content folder):
 * ln -s ~/Projects/WordPress/Themes/twentyfourteen twentyfourteen
 * ln -s ~/Projects/WordPress/Themes/twentyfifteen twentyfifteen
 * ln -s ~/Projects/WordPress/Themes/twentysixteen twentysixteen
+* ln -s ~/Projects/WordPress/Themes/twentyseventeen twentyseventeen
 * ln -s ~/Projects/WordPress/Plugins/amazon-web-services amazon-web-services
 * ln -s ~/Projects/WordPress/Plugins/cloud-search/trunk cloud-search
 * ln -s ~/Projects/WordPress/Plugins/daily-logo/trunk daily-logo
