@@ -76,6 +76,22 @@ function wordpress_setup_tax_genre_init() {
 add_action( 'init', 'wordpress_setup_tax_genre_init' );
 
 /**
+ * Register language taxonomy type
+ */
+function wordpress_setup_tax_language_init() {
+	register_taxonomy(
+		'language',
+		array('post', 'book'),
+		array(
+			'label' => 'Language',
+			'rewrite' => array( 'slug' => 'language' ),
+			'hierarchical' => true,
+		)
+	);
+}
+add_action( 'init', 'wordpress_setup_tax_language_init' );
+
+/**
  * Test daily logo
  */
 function wordpress_setup_test_daily_logo() {
