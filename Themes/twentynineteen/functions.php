@@ -17,6 +17,27 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7', '<' ) ) {
 	return;
 }
 
+/**
+ * GUTENBERG TESTS
+ */
+
+function gutenberg_boilerplate_block() {
+	wp_register_script(
+		'gutenberg-boilerplate-block',
+		get_stylesheet_directory_uri() . '/js/gutenberg-boilerplate-block.js',
+		array( 'wp-blocks', 'wp-element' )
+	);
+
+	register_block_type( 'gutenberg-boilerplate-block/test', array(
+		'editor_script' => 'gutenberg-boilerplate-block',
+	) );
+}
+add_action( 'init', 'gutenberg_boilerplate_block' );
+
+/**
+ * END
+ */
+
 if ( ! function_exists( 'twentynineteen_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
