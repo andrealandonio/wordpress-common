@@ -26,11 +26,11 @@ The default set of symlinks (used in every wp-content folder):
 * ln -s ~/Projects/WordPress/Themes/twentysixteen twentysixteen
 * ln -s ~/Projects/WordPress/Themes/twentyseventeen twentyseventeen
 * ln -s ~/Projects/WordPress/Themes/twentynineteen twentynineteen
-* ln -s ~/Projects/WordPress/Plugins/cloud-search/trunk cloud-search
-* ln -s ~/Projects/WordPress/Plugins/daily-logo/trunk daily-logo
+* ln -s ~/Projects/WordPress/Plugins/cloud-search cloud-search
+* ln -s ~/Projects/WordPress/Plugins/daily-logo daily-logo
 * ln -s ~/Projects/WordPress/Plugins/multiple-post-thumbnails multiple-post-thumbnails
-* ln -s ~/Projects/WordPress/Plugins/picker/trunk picker
-* ln -s ~/Projects/WordPress/Plugins/taxonomy-filter/trunk taxonomy-filter
+* ln -s ~/Projects/WordPress/Plugins/picker picker
+* ln -s ~/Projects/WordPress/Plugins/taxonomy-filter taxonomy-filter
 * ln -s ~/Projects/WordPress/Plugins/wordpress-importer wordpress-importer
 * ln -s ~/Projects/WordPress/Plugins/wordpress-setup wordpress-setup
 
