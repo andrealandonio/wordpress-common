@@ -30,6 +30,7 @@ For every plugin run an `npm install` to install node dependencies, then with ta
 * ln -s ~/Projects/WordPress/Themes/twentynineteen twentynineteen
 * ln -s ~/Projects/WordPress/Themes/twentytwenty twentytwenty
 * ln -s ~/Projects/WordPress/Themes/twentytwentyone twentytwentyone
+* ln -s ~/Projects/WordPress/Themes/twentytwentytwo twentytwentytwo
 * ln -s ~/Projects/WordPress/Plugins/cloud-search cloud-search
 * ln -s ~/Projects/WordPress/Plugins/daily-logo daily-logo
 * ln -s ~/Projects/WordPress/Plugins/multiple-post-thumbnails multiple-post-thumbnails
